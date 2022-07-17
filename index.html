@@ -123,8 +123,8 @@
 
 
 	<section class="gifts">
-		<div>
 		<h2 class="banner-name">Заказывайте мороженое и получайте подарки!</h2>
+		<div>
 		<h3 class="first-gift-name">Малинка даром!</h3>
 		<p class="first-gift-description">
 			При покупке 2 кг любого фруктового мороженого добавим в ваш заказ
@@ -138,7 +138,8 @@
 			При покупке 2 кг пломбира добавим в ваш заказ упаковку нежных зефирок
 			совершенно бесплатно.
 		</p>
-		<a class="second-gift-button" href="#">Хочу подарок</a></div>
+		<a class="second-gift-button" href="#">Хочу подарок</a>
+	   </div>
 		<div>
 		<h2 class="banner-name">
 			Попробуйте самые популярные вкусы нашего мороженого
@@ -199,27 +200,27 @@
 		</h2>
 		<ul class="advantages-list">
 			<li class="advantages-item">
-				<p class="advantages-description">
+				<p>
 					Всё наше мороженое изготавливается на собственном производстве с
 					использованием современного оборудования и проверенных временем
 					технологий.
 				</p>
 			</li>
 			<li class="advantages-item">
-				<p class="advantages-description">
+				<p>
 					Для приготовления мороженого используются сливки и молоко
 					высочайшего качества. Все ингредиенты и добавки произведены из
 					натурального сырья.
 				</p>
 			</li>
 			<li class="advantages-item">
-				<p class="advantages-description">
+				<p>
 					Закупка ингредиентов производится только у проверенных фермерских
 					хозяйств, с которыми нас связывает долговременное сотрудничество.
 				</p>
 			</li>
 			<li class="advantages-item">
-				<p class="advantages-description">
+				<p>
 					Доставка нашего мороженого осуществляется в специальном термопаке,
 					который не даёт мороженому растаять и позволяет сохранить
 					превосходный вкус.
@@ -229,7 +230,7 @@
 	</section>
 	<section class="news">
 		<h2 class="news-name">Новое в нашем блоге</h2>
-		<b class="news-example">10 способов сервировки фруктовых щербетов к столу</b>
+		<a class="news-example" href="#">10 способов сервировки фруктовых щербетов к столу</a>
 	</section>
 	<section class="subscription">
 		<h2 class="visually-hidden">Подписка</h2>
@@ -273,48 +274,46 @@
 			action="https://echo.htmlacademy.ru/"
 			method="post"></form>
 		<p class="appointment-form-date">
-          <span class="form-label form-label-icon">
-            <label for="appointment-date"> Дата</label>
-            <button class="info" type="button">
-              <span class="visually-hidden">Посмотреть дополнительную информацию</span>
-            </button>
-          </span>
+			<span class="form-label form-label-icon">
+				<label for="appointment-date"> Дата</label>
+				<button class="info" type="button">
+					<span class="visually-hidden">Посмотреть дополнительную информацию</span>
+				</button>
+			</span>
 			<input
 				type="text"
 				id="appointment-date"
 				name="appointment-date"
 				placeholder="01.04.2020"/>
-		</p>
-		<p class="appointment-form-phone">
-			<label for="appointment-phone"> Телефон </label>
-			<input
+			</p>
+			<p class="appointment-form-phone">
+				<label for="appointment-phone"> Телефон </label>
+				<input
 				type="text"
 				id="appointment-phone"
 				name="appointment-phone"
 				placeholder="+7 800 999-00-00"/>
-		</p>
-		<p class="appointment-form-address">
-          <span class="form-label form-label-icon">
-            <label for="appointment-address"> Адрес</label>
-            <button class="info" type="button">
-              <span class="visually-hidden">Посмотреть дополнительную информацию</span>
-            </button>
-          </span>
-			<input
+			</p>
+			<p class="appointment-form-address">
+				<span class="form-label form-label-icon">
+					<label for="appointment-address"> Адрес</label>
+					<button class="info" type="button">
+						<span class="visually-hidden">Посмотреть дополнительную информацию</span>
+					</button>
+				</span>
+				<input
 				type="text"
 				id="appointment-address"
 				name="appointment-address"
 				placeholder="ул. Большая Конюшенная, 19/8"/>
-		</p>
-		<button class="button" type="submit">Отправить</button>
-	</section>
-	<section class="contacts">
-		<h3 class="banner-name">Адрес главного офиса и офлайн-магазина:</h3>
-		<address class="contacts-address">
-			<p class="contacts-address-text">
-				наб. реки Карповки, 5 лит П, Санкт-Петербург
 			</p>
-		</address>
+			<button class="button" type="submit">Отправить</button>
+		</section>
+		<section class="contacts">
+			<h2 class="banner-name">Адрес главного офиса и офлайн-магазина:</h2>
+			<address class="contacts-address">
+				наб. реки Карповки, 5 лит П, Санкт-Петербург
+			</address>
 		<h3 class="contacts-phone">Для заказов по телефону:</h3>
 		<a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
 		<p class="contacts-phone-time">(с 10 до 20 ежедневно)</p>
@@ -329,16 +328,19 @@
 			<li class="footer-social-item">
 				<a class="button" href="#">
 					<span class="visually-hidden">ВКонтакте</span>
+					<img class="social-image" src="vk.svg">
 				</a>
 			</li>
 			<li class="footer-social-item">
 				<a class="button" href="#">
 					<span class="visually-hidden">Facebook</span>
+					<img class="social-image" src="fcbk.svg">
 				</a>
 			</li>
 			<li class="footer-social-item">
 				<a class="button" href="#">
 					<span class="visually-hidden">Инстаграм</span>
+					<img class="social-image" src="inst.svg">
 				</a>
 			</li>
 		</ul>
@@ -362,8 +364,8 @@
 	</section>
 	<section class="about">
 		<h2 class="visially-hidden">О нас</h2>
-		<img class="about-logo" src="image.svg" alt="Логотип">
-		<p class="about-text">Сделано в .html academy © 2021</p>
+		<a class="about-logo" src="image.svg" alt="Логотип">html academy</a>
+		<a class="about-text">Сделано в .html academy © 2021</a>
 	</section>
 </footer>
 </body>
