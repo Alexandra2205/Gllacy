@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8" />
 	<title>Gllacy shop</title>
+	<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -10,7 +11,8 @@
 	<nav class="navigation">
 		<ul class="navigation-list">
 			<li class="navigation-item">
-				<a class="navigation-link-main" href="gllacyshop.html">Gllacy shop</a>
+				<a class="navigation-link-main" href="gllacy-shop.html">
+					<img class="logo" src="img/main logo.svg" width="137" height="56" alt="Gllacy shop">Gllacy shop</a>
 			</li>
 			<li class="navigation-item">
 				<a class="navigation-link" href="catalog.html">Каталог</a>
@@ -23,7 +25,7 @@
 			</li>
 		</ul>
 
-		<ul class="navigation-list navigation-user">
+		<ul class="navigation-user">
 			<li class="navigation-item">
 				<a class="contacs-phone" href="tel:78005558628">+7 800 555-86-28</a>
 			</li>
@@ -54,7 +56,7 @@
 					клубничным джемом – это идеальный десерт для всей семьи.
 				</p>
 				<a class="products-card-link" href="product.html">
-					<img class="slider-image" src="" alt="Мороженое"/>
+					<img class="slider-image" src="img/slider-image 1.jpg" alt="Мороженое" width="306" height="507"/>
 				</a>
 				<a class="button-order" href="#">Заказать</a>
 			</li>
@@ -64,7 +66,7 @@
 					Сливочное мороженое с ярким банановым вкусом подарит вам свежесть и наслаждение даже в самый жаркий летний день. 
 				</p>
 				<a class="products-card-link" href="product.html">
-					<img class="product-card-image" src="" alt="Мороженое" />
+					<img class="product-card-image" src="img/slider-image 2.jpg" width="66" height="150" alt="Мороженое" />
 				</a>
 				<a class="button-order" href="#">Заказать</a>
 			</li>
@@ -74,7 +76,7 @@
 					Необычный сладкий десерт с карамельным топпингом и кусочками зефира завоюет сердца сладкоежек всех возрастов.
 				</p>
 				<a class="products-card-link" href="product.html">
-					<img class="product-card-image" src="" alt="Мороженое" />
+					<img class="product-card-image" src="img/slider-image 3.jpg" width="66" height="150" alt="Мороженое" />
 				</a>
 				<a class="button-order" href="#">Заказать</a>
 			</li>
@@ -124,8 +126,8 @@
 
 	<section class="gifts">
 		<h2 class="banner-name">Заказывайте мороженое и получайте подарки!</h2>
-		<div>
-		<h3 class="first-gift-name">Малинка даром!</h3>
+		<div class="banners">
+		<h3 class="gift-name">Малинка даром!</h3>
 		<p class="first-gift-description">
 			При покупке 2 кг любого фруктового мороженого добавим в ваш заказ
 			банку малинового варенья бесплатно.
@@ -133,7 +135,7 @@
 		<a class="first-gift-button" href="#">Хочу подарок</a>
 	</section>
 	<section class="second-gift">
-		<h3 class="second-gift-name">Маршмеллоу даром!</h3>
+		<h3 class="gift-name">Маршмеллоу даром!</h3>
 		<p class="second-gift-description">
 			При покупке 2 кг пломбира добавим в ваш заказ упаковку нежных зефирок
 			совершенно бесплатно.
@@ -147,7 +149,7 @@
 		<ul class="product-list">
 			<li class="product-thing">
 				<a class="product-thing-link" href="product.html">
-					<img class="product-thing-image" src="" alt="">
+					<img class="product-thing-image" src="img/product-thing 1.png" width="168" height="168" alt="">
 					<h3 class="product-thing-item">Малинка</h3>
 				</a>
 				<a class="product-to-buy" href=""></a>
@@ -158,7 +160,7 @@
 			</li>
 			<li class="product-thing">
 				<a class="product-thing-link" href="product.html">
-					<img class="product-thing-image" src="" alt="">
+					<img class="product-thing-image" src="img/product-thing 2.png" width="168" height="168" alt="">
 					<h3 class="product-thing-item">Фисташка</h3>
 				</a>
 				<a class="product-to-buy" href=""></a>
@@ -169,7 +171,7 @@
 			</li>
 			<li class="product-thing">
 				<a class="product-thing-link" href="product.html">
-					<img class="product-thing-image" src="" alt="">
+					<img class="product-thing-image" src="img/product-thing 3.png" width="168" height="168" alt="">
 					<h3 class="product-thing-item">Черника</h3>
 				</a>
 				<a class="product-to-buy" href=""></a>
@@ -180,7 +182,7 @@
 			</li>
 			<li class="product-thing">
 				<a class="product-thing-link" href="product.html">
-					<img class="product-thing-image" src="" alt="">
+					<img class="product-thing-image" src="img/product-thing 4.png" width="168" height="168" alt="">
 					<h3 class="product-thing-item">Бабл-гам</h3 >
 				</a>
 				<a class="product-to-buy" href=""></a>
@@ -194,7 +196,7 @@
 	</section>
 
 	<section class="advantages">
-		<h2 class="banner-name">
+		<h2 class="advantage-name">
 			Магазин Глейси – это онлайн и офлайн-магазин по продаже мороженого
 			собственного проиводства на развес
 		</h2>
@@ -253,13 +255,13 @@
 					id="subscription-email"
 					required/>
 			</p>
-			<button class="button subscription-button" type="submit">
+			<button class="button-to-send" type="submit">
 				<span class="visually-hidden">Отправить</span>
 			</button>
 		</form>
 	</section>
 	<section class="delivery">
-		<h2 class="banner-name">Доставка любимого мороженого на дом</h2>
+		<h2 class="delivery-banner-name">Доставка любимого мороженого на дом</h2>
 		<p class="delivery-description">
 			Хочется полакомиться любимым дессертом, но нет времени съездить в
 			магазин? Закажите доставку мороженого на дом, и курьер привезёт вам
@@ -307,7 +309,7 @@
 				name="appointment-address"
 				placeholder="ул. Большая Конюшенная, 19/8"/>
 			</p>
-			<button class="button" type="submit">Отправить</button>
+			<button class="button-to-send" type="submit">Отправить</button>
 		</section>
 		<section class="contacts">
 			<h2 class="banner-name">Адрес главного офиса и офлайн-магазина:</h2>
@@ -317,7 +319,7 @@
 		<h3 class="contacts-phone">Для заказов по телефону:</h3>
 		<a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
 		<p class="contacts-phone-time">(с 10 до 20 ежедневно)</p>
-		<a class="button button-feedback" href="#">Форма обратной связи</a>
+		<a class="button-feedback" href="#">Форма обратной связи</a>
 	</section>
 </main>
 
@@ -349,7 +351,7 @@
 		<h2 class="visially-hidden">Меню</h2>
 		<ul class="footer-menu-list">
 			<li class="footer-menu-item">
-				<a class="footer-menu-link" href="#">Для поставщиков</a>
+				<a class="footer-menu-link-bold" href="#">Для поставщиков</a>
 			</li>
 			<li class="footer-menu-item">
 				<a class="footer-menu-link" href="#">О производстве</a>
@@ -364,7 +366,7 @@
 	</section>
 	<section class="about">
 		<h2 class="visially-hidden">О нас</h2>
-		<a class="about-logo" src="image.svg" alt="Логотип">html academy</a>
+		<a class="about-logo" src="img/logo_htmlacademy.svg" width="93" height="26.71" alt="Логотип">html academy</a>
 		<a class="about-text">Сделано в .html academy © 2021</a>
 	</section>
 </footer>

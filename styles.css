@@ -1,0 +1,217 @@
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    src: url("fonts/Inter-Regular.woff2") format("woff2");
+    font-display: swap;
+}
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    src: url("fonts/Inter-Bold.ttf") format("woff2");
+    font-display: swap;
+}
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 900;
+    src: url("fonts/Inter-Black.ttf") format("woff2");
+    font-display: swap;
+}
+body {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    background-color: #FCFCFC;
+    color: #565C66;
+}
+.button {    
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    text-align: center;
+    color: #2D3440;
+    background-color: #FCFCFC;
+    text-decoration: none;
+}
+.page-header {
+    color: #2D3440;
+    background: #FEAFC3;
+}
+.navigation-list {
+    font-family: "Inter", sans-serif;
+    line-height: 20px;
+    font-weight: 400;
+    text-decoration: none;
+}
+.navigation-user {
+    font-family: "Inter", sans-serif;
+    line-height: 20px;
+    font-weight: 400;
+    font-size: 14px;
+    text-decoration: none;
+}
+.contacs-phone {
+    font-family: "Inter", sans-serif;
+    line-height: 20px;
+    font-weight: 700;
+    text-decoration: none;
+}
+.main-index {
+    background-image: url("img/pink-fon.png");
+    color: #2D3440;
+    background-color: #FFFFFF;
+    background-size: 100% auto;
+    background-repeat: repeat;
+}
+.slider-name {
+    font-family: "Inter", sans-serif;
+    line-height: 46px;
+    font-weight: 900;
+    font-size: 36px;
+    text-decoration: none;
+}
+.slider-description {
+    font-family: "Inter", sans-serif;
+    line-height: 24px;
+    font-weight: 400;
+    font-size: 18px;
+    text-decoration: none;
+}
+.banner-name {
+    font-family: "Inter", sans-serif;
+    line-height: 46px;
+    font-weight: 900;
+    font-size: 32px;
+    text-decoration: none;
+    text-align: center;
+}
+.banners {
+    background-color: #FCFCFC;
+}
+.gift-name {
+    font-family: "Inter", sans-serif;
+    line-height: 30px;
+    font-weight: 700;
+    font-size: 24px;
+    text-decoration: none;
+}
+.product-thing-item {
+    font-family: "Inter", sans-serif;
+    line-height: 24px;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+}
+.product-thing-description {
+    font-family: "Inter", sans-serif;
+    line-height: 22px;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: #565C66;
+}
+.product-thing-price {
+    font-family: "Inter", sans-serif;
+    line-height: 24px;
+    font-weight: 700;
+    font-size: 20px;
+}
+.advantages {
+    background-image: url("img/waffle\ fon.png");
+    color: #565C66;
+    background-color: #FCFCFC;
+    background-size: 100% auto;
+    background-repeat: repeat;
+}
+.advantage-name {
+    font-family: "Inter", sans-serif;
+    line-height: 46px;
+    font-weight: 900;
+    font-size: 32px; 
+    color: #2D3440;
+}
+.advantages-list {
+    font-family: "Inter", sans-serif;
+    line-height: 22px;
+    font-weight: 400;
+    font-size: 16px; 
+}
+.news {
+    background-image: url("img/news-fon.png");
+    color: #2D3440;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+}
+.news-name {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #565C66;
+}
+.subscription {
+    background-image: url("img/mail\ fob.png");
+    background-color: #FCFCFC;
+    color: #565C66;
+}
+.button-to-send {
+    background: #FF2F64;
+    color: #FCFCFC;
+}
+.delivery {
+    background-image: url("img/delivery-fon.png");
+}
+.delivery-banner-name {
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 46px;
+    color: #2D3440;
+}
+.appointment-form {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #2D3440;
+}
+.contacts {
+    background-image: url("img/address.png");
+    background-color: #FCFCFC;
+}
+.contacts-address {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #2D3440;
+}
+.contacts-phone {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #2D3440;
+}
+.contacts-phone-time {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+.button-feedback {
+    background: #FF2F64;
+    color: #FCFCFC; 
+}   
+.page-footer {
+    font-size: 14px;
+    font-weight: 400;
+    color: #2D3440;
+    background-color: #FEAFC3;
+  }
+.footer-menu-link-bold {
+    font-weight: 700;
+}
+.about-text {
+    font-size: 12px;
+    line-height: 16px;
+}
