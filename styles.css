@@ -6,31 +6,30 @@
     font-display: swap;
 }
 @font-face {
-    font-family: "Inter";
+    font-family: "Inter-Bold";
     font-style: normal;
     font-weight: 700;
     src: url("fonts/Inter-Bold.ttf") format("woff2");
     font-display: swap;
 }
 @font-face {
-    font-family: "Inter";
+    font-family: "Inter-Black";
     font-style: normal;
     font-weight: 900;
     src: url("fonts/Inter-Black.ttf") format("woff2");
     font-display: swap;
 }
 body {
-    font-family: "Inter", sans-serif;
+    font-family: "Inter";
     font-size: 16px;
     line-height: 22px;
     background-color: #FCFCFC;
     color: #565C66;
 }
 .button {    
-    font-family: inherit;
+    font-family: "Inter-Bold";
     font-size: 16px;
     line-height: 20px;
-    font-weight: 700;
     text-align: center;
     color: #2D3440;
     background-color: #FCFCFC;
@@ -40,24 +39,27 @@ body {
     color: #2D3440;
     background: #FEAFC3;
 }
-.navigation-list {
-    font-family: "Inter", sans-serif;
+.navigation-link {
     line-height: 20px;
     font-weight: 400;
     text-decoration: none;
+    color: #2D3440;
 }
 .navigation-user {
-    font-family: "Inter", sans-serif;
     line-height: 20px;
     font-weight: 400;
     font-size: 14px;
     text-decoration: none;
 }
+.navigation-link-active {
+    background: #FF4A78;
+    color: #FCFCFC;
+}
 .contacs-phone {
-    font-family: "Inter", sans-serif;
+    font-family: "Inter-Bold";
     line-height: 20px;
-    font-weight: 700;
     text-decoration: none;
+    color: #2D3440;
 }
 .main-index {
     background-image: url("img/pink-fon.png");
@@ -66,24 +68,25 @@ body {
     background-size: 100% auto;
     background-repeat: repeat;
 }
+.main-inner {
+    color: #2D3440;
+    background: #FEAFC3;
+}
 .slider-name {
-    font-family: "Inter", sans-serif;
+    font-family: "Inter-Black";
     line-height: 46px;
     font-weight: 900;
     font-size: 36px;
     text-decoration: none;
 }
 .slider-description {
-    font-family: "Inter", sans-serif;
     line-height: 24px;
-    font-weight: 400;
     font-size: 18px;
     text-decoration: none;
 }
 .banner-name {
-    font-family: "Inter", sans-serif;
+    font-family: "Inter-Black";
     line-height: 46px;
-    font-weight: 900;
     font-size: 32px;
     text-decoration: none;
     text-align: center;
@@ -92,31 +95,26 @@ body {
     background-color: #FCFCFC;
 }
 .gift-name {
-    font-family: "Inter", sans-serif;
+    font-family: "Inter-Bold";
     line-height: 30px;
-    font-weight: 700;
     font-size: 24px;
     text-decoration: none;
 }
-.product-thing-item {
-    font-family: "Inter", sans-serif;
+.product-card-item {
+    font-family: "Inter-Bold";
     line-height: 24px;
-    font-weight: 700;
     font-size: 20px;
     text-align: center;
 }
-.product-thing-description {
-    font-family: "Inter", sans-serif;
+.product-card-description {
     line-height: 22px;
-    font-weight: 400;
     font-size: 16px;
     text-align: center;
     color: #565C66;
 }
-.product-thing-price {
-    font-family: "Inter", sans-serif;
+.product-card-price {
+    font-family: "Inter-Bold";
     line-height: 24px;
-    font-weight: 700;
     font-size: 20px;
 }
 .advantages {
@@ -127,27 +125,23 @@ body {
     background-repeat: repeat;
 }
 .advantage-name {
-    font-family: "Inter", sans-serif;
+    font-family: "Inter-Black";
     line-height: 46px;
-    font-weight: 900;
     font-size: 32px; 
     color: #2D3440;
 }
 .advantages-list {
-    font-family: "Inter", sans-serif;
     line-height: 22px;
-    font-weight: 400;
     font-size: 16px; 
 }
 .news {
     background-image: url("img/news-fon.png");
     color: #2D3440;
-    font-weight: 700;
+    font-family: "Inter-Bold";
     font-size: 24px;
     line-height: 30px;
 }
 .news-name {
-    font-weight: 400;
     font-size: 16px;
     line-height: 20px;
     color: #565C66;
@@ -158,6 +152,7 @@ body {
     color: #565C66;
 }
 .button-to-send {
+    font-family: "Inter-Bold";
     background: #FF2F64;
     color: #FCFCFC;
 }
@@ -171,7 +166,7 @@ body {
     color: #2D3440;
 }
 .appointment-form {
-    font-weight: 700;
+    font-family: "Inter-Bold";
     font-size: 16px;
     line-height: 20px;
     color: #2D3440;
@@ -182,19 +177,18 @@ body {
 }
 .contacts-address {
     font-style: normal;
-    font-weight: 700;
+    font-family: "Inter-Bold";
     font-size: 20px;
     line-height: 24px;
     color: #2D3440;
 }
 .contacts-phone {
-    font-weight: 700;
+    font-family: "Inter-Bold";
     font-size: 20px;
     line-height: 24px;
     color: #2D3440;
 }
 .contacts-phone-time {
-    font-weight: 400;
     font-size: 14px;
     line-height: 20px;
 }
@@ -204,14 +198,58 @@ body {
 }   
 .page-footer {
     font-size: 14px;
-    font-weight: 400;
     color: #2D3440;
     background-color: #FEAFC3;
   }
 .footer-menu-link-bold {
-    font-weight: 700;
+    font-family: "Inter-Bold";
 }
 .about-text {
     font-size: 12px;
     line-height: 16px;
+}
+.inner-header-title {
+    font-size: 16px;
+    line-height: 20px;
+}
+.page-name {
+    font-family: "Inter-Black";
+    font-size: 32px;
+    line-height: 46px;
+}
+.button-catalog {
+    font-family: "Inter-Bold";
+    background: #FCFCFC;
+    opacity: 0.3;
+}
+.breadcrumbs {
+    color: #2D3440;
+    font-family: "Inter-Bold";
+    font-size: 14px;
+    line-height: 20px;
+}
+.breadcrumbs-link {
+    color: inherit;
+    text-decoration: underline;
+  }
+.breadcrumbs-link {
+    color: inherit;
+  }
+.catalog-products {
+    background: #FCFCFC;
+    opacity: 0.3;
+  }
+.button-pagination-show-more {
+    background: #FCFCFC;
+    font-family: "Inter-Bold";
+    font-size: 16px;
+    line-height: 20px;
+}
+.pagination {
+    color: #2D3440;
+    font-size: 16px;
+    line-height: 20px;
+}
+.pagination-current {
+    background: #FCFCFC;
 }
