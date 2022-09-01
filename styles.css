@@ -19,12 +19,20 @@
     src: url("fonts/Inter-Black.ttf") format("woff2");
     font-display: swap;
 }
+html {
+    height: 100%;
+}
 body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
     font-family: "Inter";
     font-size: 16px;
     line-height: 22px;
     background-color: #FCFCFC;
     color: #565C66;
+
 }
 .button {    
     font-family: "Inter-Bold";
@@ -41,6 +49,16 @@ body {
     color: #2D3440;
     background: #FEAFC3;
 }
+.navigation {
+    display: flex;
+    width: 1170px;
+    margin: 0 auto;
+}
+.navigation-list {
+    margin: 0;
+    padding: 0;
+    width: 400px;
+}
 .navigation-link {
     line-height: 20px;
     font-weight: 400;
@@ -48,6 +66,8 @@ body {
     color: #2D3440;
 }
 .navigation-user {
+    max-width: 420px;
+    margin-left: auto;
     line-height: 20px;
     font-weight: 400;
     font-size: 14px;
@@ -63,6 +83,9 @@ body {
     text-decoration: none;
     color: #2D3440;
 }
+.main-container {
+    flex-grow: 1;
+}
 .main-index {
     background-image: url("img/pink-fon.png");
     color: #2D3440;
@@ -74,27 +97,62 @@ body {
     color: #2D3440;
     background: #FEAFC3;
 }
+.page-container {
+    width: 1170px;
+    margin: 0 auto;
+}
+.products {
+    display: flex;
+    justify-content: space-between;
+}
+.products-item-main {
+    width: 818px;
+}
+.products-item {
+    width: 100px;
+    padding: 40px;
+}
 .slider-name {
     font-family: "Inter-Black";
     line-height: 46px;
     font-weight: 900;
     font-size: 36px;
     text-decoration: none;
+    width: 470px;
 }
 .slider-description {
     line-height: 24px;
     font-size: 18px;
     text-decoration: none;
+    width: 414px;
 }
-.banner-name {
+.slider-image {
+    width: 348px;
+}
+.banner-name-gift {
     font-family: "Inter-Black";
     line-height: 46px;
     font-size: 32px;
     text-decoration: none;
     text-align: center;
+    display: block;
+    margin: 0 auto;
+    width: 443px;
 }
-.banners {
+.gifts {
+    display: flex;
+    justify-content: space-between;
+}
+.first-gift {
+    width: 570px;
+    padding-left: 40px;
     background: #FF7799;
+}
+.second-gift {
+    width: 570px;
+    padding-left: 40px;
+    background: #FF7799;
+    margin-left: 30px;
 }
 .gift-name {
     font-family: "Inter-Bold";
@@ -102,8 +160,32 @@ body {
     font-size: 24px;
     text-decoration: none;
 }
+.first-gift-description {
+    width: 321px;
+}
+.second-gift-description {
+    width: 294px;
+}
+.banner-name-product {
+    font-family: "Inter-Black";
+    line-height: 46px;
+    font-size: 32px;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    width: 527px;
+}
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
 .product-card {
     background: #FCFCFC;
+    width: 270px;
 }
 .product-card-item {
     font-family: "Inter-Bold";
@@ -124,6 +206,9 @@ body {
     line-height: 24px;
     font-size: 20px;
 }
+.product-card-image {
+    margin: 0 auto;
+}
 .advantages {
     background-image: url("img/advantages-fon.png");
     color: #565C66;
@@ -134,13 +219,27 @@ body {
     line-height: 46px;
     font-size: 32px; 
     color: #2D3440;
+    text-align: center;
+    width: 995px;
+    margin: 0 auto;
 }
 .advantages-list {
     line-height: 22px;
     font-size: 16px; 
+    display: flex;
+    flex-wrap: wrap;
+}
+.advantages-item {
+    width: 440px;
+    margin: 30px;
 }
 a {
     text-decoration: none;
+}
+.news-subscription {
+    display: flex;
+    justify-content: space-between;
+    width: 1170px;
 }
 .news {
     background-image: url("img/news-fon.png");
@@ -148,19 +247,27 @@ a {
     font-family: "Inter-Bold";
     font-size: 24px;
     line-height: 30px;
+    width: 570px;
 }
 .news-name {
     font-size: 16px;
     line-height: 20px;
     color: #565C66;
+    margin-left: 30px;
 }
 .news-example {
     font-family: "Inter-Bold";
     color: #2D3440;
+    width: 303px;
+    margin-left: 30px;
 }
 .subscription {
     background-image: url("img/mail-fon.png");
     color: #565C66;
+    width: 570px;
+}
+.subscription-text {
+    margin-left: 30px;
 }
 .button-to-send {
     font-family: "Inter-Bold";
@@ -170,11 +277,25 @@ a {
 .delivery {
     background-image: url("img/delivery-fon.png");
 }
+.delivery-text {
+    margin-left: 100px;
+}
 .delivery-banner-name {
     font-weight: 900;
     font-size: 32px;
     line-height: 46px;
     color: #2D3440;
+    width: 356px;
+    font-family: "Inter-Black";
+}
+.delivery-description {
+    width: 371px;
+}
+.form-delivery {
+    width: 500px;
+    margin-left: auto;
+    background-color: #FCFCFC;
+    padding-left: 40px;
 }
 .appointment-form {
     font-family: "Inter-Bold";
@@ -190,7 +311,12 @@ a {
 }
 .contacts {
     background-image: url("img/address.png");
+}
+.contacts-text {
     background-color: #FCFCFC;
+    width: 343px;
+    margin-left: 64px;
+    padding-left: 40px;
 }
 .contacts-name {
     font-size: 16px;
@@ -228,6 +354,18 @@ a {
     color: #2D3440;
     background-color: #FEAFC3;
   }
+.page-footer-container {
+    display: flex;
+    width: 1170px;
+    margin: 0 auto;
+  }
+.footer-social {
+    width: 104px;
+    margin-right: 300px;
+}
+.footer-menu {
+    width: 360px;
+}
   .footer-menu-link {
     color: #2D3440;
   }
@@ -235,9 +373,18 @@ a {
     font-family: "Inter-Bold";
     color: #2D3440;
 }
+.made-in {
+    font-size: 12px;
+    line-height: 16px;
+}
+.about {
+    margin-left: auto;
+    max-width: 190px;
+}
 .about-text {
     font-size: 12px;
     line-height: 16px;
+    color: #2D3440;
 }
 .inner-header-title {
     font-size: 16px;
@@ -259,24 +406,38 @@ a {
     font-size: 14px;
     line-height: 20px;
 }
-.breadcrumbs-link {
+.breadcrumbs-link-underlined {
     color: inherit;
     text-decoration: underline;
   }
 .breadcrumbs-link {
     color: inherit;
   }
-.catalog-products {
+.catalog-filter-title {
+    font-size: 14px;
+    line-height: 20px;
+}
+.control {
     background: #FCFCFC;
     opacity: 0.3;
+    font-size: 14px;
+    line-height: 20px;
+    color: #2D3440;
   }
+.button-catalog {
+    color: #2D3440;
+    font-family: "Inter-Bold";
+    font-size: 14px;
+    line-height: 20px;
+    background: rgba(252, 252, 252, 0.3);
+}
 .button-pagination-show-more {
     background: #FCFCFC;
     font-family: "Inter-Bold";
     font-size: 16px;
     line-height: 20px;
 }
-.pagination {
+.pagination-link {
     color: #2D3440;
     font-size: 16px;
     line-height: 20px;

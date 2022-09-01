@@ -43,13 +43,14 @@
 	</nav>
 </header>
 
-<main class="main-index">
+<main class="main-container main-index">
+	<div class="page-container">
 	<h1 class="visially-hidden"></h1>
 	<section class="slider">
 		<button class="pagination-link-prev"><span class="visually-hidden">Предыдущая страница</span></button>
 		<button class="pagination-link-next"><span class="visually-hidden">Следующая страница</span></button>
 		<ul class="products">
-			<li class="products-item">
+			<li class="products-item-main">
 				<h2 class="slider-name">Нежный пломбир с клубничным джемом</h2>
 				<p class="slider-description">
 					Натуральное мороженое из свежих сливок и молока с вкуснейшим
@@ -124,9 +125,11 @@
 	</section>
 
 
-	<div class="banners"><section class="gifts">
-		<h2 class="banner-name">Заказывайте мороженое и получайте подарки!</h2>
-		
+	<div class="banners">
+		<h2 class="banner-name-gift">Заказывайте мороженое и получайте подарки!</h2>
+	</div>
+	<div class="gifts">
+		<section class="first-gift">
 		<h3 class="gift-name">Малинка даром!</h3>
 		<p class="first-gift-description">
 			При покупке 2 кг любого фруктового мороженого добавим в ваш заказ
@@ -143,7 +146,7 @@
 		<a class="second-gift-button" href="#">Хочу подарок</a>
 	  </section> </div>
 		<div>
-		<h2 class="banner-name">
+		<h2 class="banner-name-product">
 			Попробуйте самые популярные вкусы нашего мороженого
 		</h2>
 		<ul class="product-list">
@@ -157,6 +160,7 @@
 					Сливочное мороженое с малиновым джемом
 				</p>
 				<b class="product-card-price">310 Р/кг</b>
+				<button class="product-card-button"></button>
 			</li>
 			<li class="product-card">
 				<a class="product-card-link" href="product.html">
@@ -168,6 +172,7 @@
 					Фисташковый пломбир с кусочками шоколада
 				</p>
 				<b class="product-card-price">340 Р/кг</b>
+				<button class="product-card-button"></button>
 			</li>
 			<li class="product-card">
 				<a class="product-card-link" href="product.html">
@@ -179,6 +184,7 @@
 					Крем-брюле с черничным джемом
 				</p>
 				<b class="product-card-price">330 Р/кг</b>
+				<button class="product-card-button"></button>
 			</li>
 			<li class="product-card">
 				<a class="product-card-link" href="product.html">
@@ -190,6 +196,7 @@
 					Ванильный пломбир со сладкой посыпкой
 				</p>
 				<b class="product-card-price">320 Р/кг</b>
+				<button class="product-card-button"></button>
 			</li>
 		</ul>
 		</div>
@@ -229,11 +236,13 @@
 			</li>
 		</ul>
 	</section>
+	<div class="news-subscription">
 	<section class="news">
 		<h2 class="news-name">Новое в нашем блоге</h2>
 		<a class="news-example" href="#">10 способов сервировки фруктовых щербетов к столу</a>
 	</section>
 	<section class="subscription">
+		<div class="subscription-text">
 		<h2 class="visually-hidden">Подписка</h2>
 		<p class="subscription-description">
 			Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего
@@ -257,15 +266,17 @@
 			<button class="button-to-send" type="submit">
 				<span class="visually-hidden">Отправить</span>
 			</button>
-		</form>
-	</section>
+		</form></div>
+	</section></div>
 	<section class="delivery">
+		<div class="delivery-text">
 		<h2 class="delivery-banner-name">Доставка любимого мороженого на дом</h2>
 		<p class="delivery-description">
 			Хочется полакомиться любимым дессертом, но нет времени съездить в
 			магазин? Закажите доставку мороженого на дом, и курьер привезёт вам
 			ваш заказ в течение часа!
-		</p>
+		</p></div>
+		<div class="form-delivery">
 		<p class="delivery-form">
 			Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить
 			заказ.
@@ -308,9 +319,10 @@
 				name="appointment-address"
 				placeholder="ул. Большая Конюшенная, 19/8"/>
 			</p>
-			<button class="button-to-send" type="submit">Отправить</button>
+			<button class="button-to-send" type="submit">Отправить</button></div>
 		</section>
 		<section class="contacts">
+			<div class="contacts-text">
 			<h2 class="contacts-name">Адрес главного офиса и офлайн-магазина:</h2>
 			<address class="contacts-address">
 				наб. реки Карповки, 5 лит П, Санкт-Петербург
@@ -319,10 +331,12 @@
 		<a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
 		<p class="contacts-phone-time">(с 10 до 20 ежедневно)</p>
 		<a class="button-feedback" href="#">Форма обратной связи</a>
-	</section>
+	</div></section>
+</div>
 </main>
 
 <footer class="page-footer">
+	<div class="page-footer-container">
 	<section class="footer-social">
 		<h2 class="visially-hidden">Соцсети</h2>
 		<ul class="footer-social-list">
@@ -367,8 +381,10 @@
 		<h2 class="visially-hidden">О нас</h2>
 		<a class="about-logo" href="https://htmlacademy.ru/">
 		<img class="about-logo" src="img/logo_htmlacademy.svg" width="93" height="26.71" alt="Логотип"></a>
-		<a class="about-text">Сделано в .html academy © 2021</a>
-	</section>
+		<p class="made-in">Сделано в </p>
+		<a class="about-text" href="https://htmlacademy.ru/">.html academy</a>
+		<p class="made-in"> © 2021</p>
+	</section></div>
 </footer>
 </body>
 </html>
